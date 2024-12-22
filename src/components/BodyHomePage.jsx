@@ -5,7 +5,7 @@ function BodyHomePage() {
     return (
         <section className="body_homepage_section">
             <article className='body_homepage_article_header'>Quiz Management</article>
-            <QuizCard 
+            <QuizCard
                 title="Reconocimiento Peces lvl 1"
                 text="Practice finding the names of the fish in order."
                 difficulty="easy"

@@ -9,6 +9,8 @@ import './styles/normalize.css'
 import GlobalStyle from './styles/createGlobalStyle.jsx'
 import ScrollToTop from "./styles/ScrollToTop";
 import HomePage from './pages/HomePage';
+import Quiz from './pages/Quiz.jsx';
+
 import reportWebVitals from './reportWebVitals';
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
@@ -18,6 +20,7 @@ root.render(
       <ScrollToTop />
         <Routes>
           <Route path="/" element={<HomePage />}/>
+          <Route path="/quiz" element={<Quiz />}/>
         </Routes>
     <React.StrictMode></React.StrictMode>
   </HashRouter>,

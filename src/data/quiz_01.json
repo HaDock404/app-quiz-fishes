@@ -1,0 +1,73 @@
+[
+    {
+      "image": ".jpg",
+      "order": "PETROMYZONTIFORMES",
+      "family": "Petromyzontidae",
+      "scientific_name": "Petromyzon marinus",
+      "common_name": "lamprea de mar"
+    },
+    {
+        "image": ".jpg",
+        "order": "CARCHARHINIFORMES",
+        "family": "Scyliorhinidae",
+        "scientific_name": "Scyliorhinus canicula",
+        "common_name": "Pintarroja"
+      },
+      {
+        "image": ".jpg",
+        "order": "CARCHARHINIFORMES",
+        "family": "Triakidae",
+        "scientific_name": "Galeorhinus galeus",
+        "common_name": "Cazón"
+      },
+      {
+        "image": ".jpg",
+        "order": "RAJIFORMES",
+        "family": "Rajidae",
+        "scientific_name": "Raja clavata",
+        "common_name": "Raya de clavos"
+      },
+      {
+        "image": ".jpg",
+        "order": "ACIPENSERIFORMES",
+        "family": "Acipenseridae",
+        "scientific_name": "Acipenser sturio",
+        "common_name": "Esturión"
+      },
+      {
+        "image": ".jpg",
+        "order": "ANGUILLIFORMES",
+        "family": "Anguillidae",
+        "scientific_name": "Anguilla anguilla",
+        "common_name": "Anguila"
+      },
+      {
+        "image": ".jpg",
+        "order": "ANGUILLIFORMES",
+        "family": "Congridae",
+        "scientific_name": "Conger conger",
+        "common_name": "Congrio"
+      },
+      {
+        "image": ".jpg",
+        "order": "LOPHIIFORMES",
+        "family": "Lophiidae",
+        "scientific_name": "Lophius piscatorius",
+        "common_name": "Rape blanco"
+      },
+      {
+        "image": ".jpg",
+        "order": "GADIFORMES",
+        "family": "Gadidae",
+        "scientific_name": "Melanogrammus aeglefinus",
+        "common_name": "Eglefino"
+      },
+      {
+        "image": ".jpg",
+        "order": "GADIFORMES",
+        "family": "Gadidae",
+        "scientific_name": "Gadus morhua",
+        "common_name": "Bacalao"
+      }
+]
+  
