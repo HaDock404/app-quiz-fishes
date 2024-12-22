@@ -1,9 +1,23 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import data from "../data/quiz_01.json";
 import { useNavigate } from "react-router-dom";
 //setOrderInputState(`<span id='test'>${orderInput.toLowerCase()}</span> : ${currentData.order.toLowerCase()}`)
 
 function BodyQuizPage() {
+
+    const [shuffledData, setShuffledData] = useState([]);
+    const shuffleArray = (array) => {
+        return array.sort(() => Math.random() - 0.5);
+      };
+    
+      // Charger les données mélangées au démarrage
+      useEffect(() => {
+        setShuffledData(shuffleArray([...data])); // Copie de `data` pour éviter de modifier l'original
+      }, []);
+
+
+
+
     const [currentQuestion, setCurrentQuestion] = useState(0);
     const navigate = useNavigate();
 
@@ -27,6 +41,8 @@ function BodyQuizPage() {
     const handleSubmit = () => {
         const currentData = data[currentQuestion];
         let currentScore = 0;
+
+        //setOrderInputState(`${orderInput.toLowerCase()} : ${currentData.order.toLowerCase()}`)
 
         if (orderInput.toLowerCase() === currentData.order.toLowerCase()) {
             currentScore = currentScore + 0.5
