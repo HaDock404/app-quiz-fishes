@@ -73,6 +73,22 @@
     height: 20px;
 }
 
+.quiz_page_box-image {
+    width: 400px;
+    height: 300px;
+}
+
+.image-fit {
+    width: 100%;
+    height: 100%; /* Assure que le conteneur prend toute la hauteur */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden; 
+    object-fit: contain; /* Assure que l'image couvre tout sans distorsion */
+    display: block;
+}
+
 .quiz_page_result {
     display: flex;
     flex-direction: row;

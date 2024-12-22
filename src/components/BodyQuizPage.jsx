@@ -182,9 +182,9 @@ function BodyQuizPage() {
                     <div className="quiz_page_box-image">
                         {currentData?.image ? (
                                 <img
+                                    className="image-fit"
                                     src={require(`../assets/${currentData.image}`)}
                                     alt={currentData.name || "Image"}
-                                    style={{ width: "400px", height: "300px" }}
                                 />
                             ) : (
                                 <p>Image non disponible</p>

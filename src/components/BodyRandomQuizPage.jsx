@@ -190,9 +190,9 @@ function BodyRandomQuizPage() {
                     <div className="quiz_page_box-image">
                     {imagePath ? (
                         <img
+                            className="image-fit"
                             src={imagePath}
                             alt={currentData.name || "Image"}
-                            style={{ width: "400px", height: "300px" }}
                         />
                     ) : (
                         <p>Image non disponible</p>
