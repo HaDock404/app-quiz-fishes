@@ -2,7 +2,7 @@ import { Link } from "react-router-dom"
 
 function QuizCard({title, text, difficulty, color, order}) {
     return (
-        <Link to="/quiz" className="quiz_card_article">
+        <Link to="/random-quiz" className="quiz_card_article">
             <div className="quiz_card_title">
                 {title}
             </div>

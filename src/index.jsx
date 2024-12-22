@@ -10,6 +10,7 @@ import GlobalStyle from './styles/createGlobalStyle.jsx'
 import ScrollToTop from "./styles/ScrollToTop";
 import HomePage from './pages/HomePage';
 import Quiz from './pages/Quiz.jsx';
+import RandomQuiz from './pages/RandomQuiz.jsx';
 
 import reportWebVitals from './reportWebVitals';
 
@@ -21,6 +22,7 @@ root.render(
         <Routes>
           <Route path="/" element={<HomePage />}/>
           <Route path="/quiz" element={<Quiz />}/>
+          <Route path="/random-quiz" element={<RandomQuiz />}/>
         </Routes>
     <React.StrictMode></React.StrictMode>
   </HashRouter>,

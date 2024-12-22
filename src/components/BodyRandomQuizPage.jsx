@@ -1,9 +1,8 @@
 import React, { useState, useEffect } from "react";
 import data from "../data/quiz_01.json";
 import { useNavigate } from "react-router-dom";
-//setOrderInputState(`<span id='test'>${orderInput.toLowerCase()}</span> : ${currentData.order.toLowerCase()}`)
 
-function BodyQuizPage() {
+function BodyRandomQuizPage() {
 
     const [shuffledData, setShuffledData] = useState([]);
     const shuffleArray = (array) => {
@@ -14,9 +13,6 @@ function BodyQuizPage() {
       useEffect(() => {
         setShuffledData(shuffleArray([...data])); // Copie de `data` pour éviter de modifier l'original
       }, []);
-
-
-
 
     const [currentQuestion, setCurrentQuestion] = useState(0);
     const navigate = useNavigate();
@@ -39,10 +35,9 @@ function BodyQuizPage() {
     const [feedback, setFeedback] = useState("");
 
     const handleSubmit = () => {
-        const currentData = data[currentQuestion];
+        const currentData = shuffledData[currentQuestion];
         let currentScore = 0;
 
-        //setOrderInputState(`${orderInput.toLowerCase()} : ${currentData.order.toLowerCase()}`)
 
         if (orderInput.toLowerCase() === currentData.order.toLowerCase()) {
             currentScore = currentScore + 0.5
@@ -99,7 +94,7 @@ function BodyQuizPage() {
         setNameInputState("")
         setNameAnswer("")
 
-        if (currentQuestion < data.length - 1) {
+        if (currentQuestion < shuffledData.length - 1) {
             setCurrentQuestion(currentQuestion + 1);
         } else {
             alert(`Quiz terminé ! Votre score final est de ${score} / 20.`);
@@ -109,8 +104,12 @@ function BodyQuizPage() {
         }
     };
 
-    const currentData = data[currentQuestion];
-    const imagePath = require(`../assets/${currentData.image}`);
+    //const currentData = data[currentQuestion];
+    //const imagePath = require(`../assets/${currentData.image}`);
+    const currentData = shuffledData[currentQuestion] || {};
+    const imagePath = currentData.image
+    ? require(`../assets/${currentData.image}`)
+    : null;
 
     return (
         <section className="quiz_page_section">
@@ -184,11 +183,15 @@ function BodyQuizPage() {
 
                     </div>
                     <div className="quiz_page_box-image">
+                    {imagePath ? (
                         <img
                             src={imagePath}
-                            alt={currentData.name}
+                            alt={currentData.name || "Image"}
                             style={{ width: "400px", height: "300px" }}
                         />
+                    ) : (
+                        <p>Image non disponible</p>
+                    )}
                     </div>
                 </article>
                 <article className="quiz_page_result">
@@ -206,4 +209,4 @@ function BodyQuizPage() {
     )
 }
 
-export default BodyQuizPage
+export default BodyRandomQuizPage
