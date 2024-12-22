@@ -1,69 +1,69 @@
 [
     {
-      "image": ".jpg",
+      "image": "quiz_01.png",
       "order": "PETROMYZONTIFORMES",
       "family": "Petromyzontidae",
       "scientific_name": "Petromyzon marinus",
       "common_name": "lamprea de mar"
     },
     {
-        "image": ".jpg",
+        "image": "quiz_02.png",
         "order": "CARCHARHINIFORMES",
         "family": "Scyliorhinidae",
         "scientific_name": "Scyliorhinus canicula",
         "common_name": "Pintarroja"
       },
       {
-        "image": ".jpg",
+        "image": "quiz_03.png",
         "order": "CARCHARHINIFORMES",
         "family": "Triakidae",
         "scientific_name": "Galeorhinus galeus",
         "common_name": "Cazón"
       },
       {
-        "image": ".jpg",
+        "image": "quiz_04.png",
         "order": "RAJIFORMES",
         "family": "Rajidae",
         "scientific_name": "Raja clavata",
         "common_name": "Raya de clavos"
       },
       {
-        "image": ".jpg",
+        "image": "quiz_05.png",
         "order": "ACIPENSERIFORMES",
         "family": "Acipenseridae",
         "scientific_name": "Acipenser sturio",
         "common_name": "Esturión"
       },
       {
-        "image": ".jpg",
+        "image": "quiz_06.png",
         "order": "ANGUILLIFORMES",
         "family": "Anguillidae",
         "scientific_name": "Anguilla anguilla",
         "common_name": "Anguila"
       },
       {
-        "image": ".jpg",
+        "image": "quiz_07.png",
         "order": "ANGUILLIFORMES",
         "family": "Congridae",
         "scientific_name": "Conger conger",
         "common_name": "Congrio"
       },
       {
-        "image": ".jpg",
+        "image": "quiz_08.png",
         "order": "LOPHIIFORMES",
         "family": "Lophiidae",
         "scientific_name": "Lophius piscatorius",
         "common_name": "Rape blanco"
       },
       {
-        "image": ".jpg",
+        "image": "quiz_09.png",
         "order": "GADIFORMES",
         "family": "Gadidae",
         "scientific_name": "Melanogrammus aeglefinus",
         "common_name": "Eglefino"
       },
       {
-        "image": ".jpg",
+        "image": "quiz_10.png",
         "order": "GADIFORMES",
         "family": "Gadidae",
         "scientific_name": "Gadus morhua",
