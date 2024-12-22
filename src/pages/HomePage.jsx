@@ -1,6 +1,11 @@
+import BodyHomePage from "../components/BodyHomePage"
+import '../styles/homepage.css'
+
 function HomePage() {
     return (
-        <div>hello</div>
+        <section className="homepage">
+            <BodyHomePage />
+        </section>
     )
 }
 
