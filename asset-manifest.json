@@ -1,28 +1,38 @@
 {
   "files": {
     "main.css": "/app-quiz-fishes/static/css/main.279e97dd.css",
-    "main.js": "/app-quiz-fishes/static/js/main.99278bca.js",
+    "main.js": "/app-quiz-fishes/static/js/main.b1a02f02.js",
     "static/js/896.65590542.chunk.js": "/app-quiz-fishes/static/js/896.65590542.chunk.js",
     "static/js/835.b1359f92.chunk.js": "/app-quiz-fishes/static/js/835.b1359f92.chunk.js",
-    "static/js/994.d85668d3.chunk.js": "/app-quiz-fishes/static/js/994.d85668d3.chunk.js",
+    "static/js/994.143aaca7.chunk.js": "/app-quiz-fishes/static/js/994.143aaca7.chunk.js",
     "static/js/488.23c12632.chunk.js": "/app-quiz-fishes/static/js/488.23c12632.chunk.js",
+    "static/media/quiz_15.png": "/app-quiz-fishes/static/media/quiz_15.90120213fc34bb5849d4.png",
     "static/media/quiz_04.png": "/app-quiz-fishes/static/media/quiz_04.965fcd66515f492a1ea2.png",
+    "static/media/quiz_17.png": "/app-quiz-fishes/static/media/quiz_17.8c1b09454c1c6af4b42f.png",
+    "static/media/quiz_18.png": "/app-quiz-fishes/static/media/quiz_18.dc8deee2c95988ca12c6.png",
     "static/media/quiz_02.png": "/app-quiz-fishes/static/media/quiz_02.31053239a42f62e5756f.png",
+    "static/media/quiz_14.png": "/app-quiz-fishes/static/media/quiz_14.6890910ba8ee87fe629d.png",
     "static/media/quiz_05.png": "/app-quiz-fishes/static/media/quiz_05.eb105c90a6c044b0c6e4.png",
     "static/media/quiz_03.png": "/app-quiz-fishes/static/media/quiz_03.340641342d3fd7d1266c.png",
     "static/media/quiz_07.png": "/app-quiz-fishes/static/media/quiz_07.cf4db87fccfa176044ac.png",
+    "static/media/quiz_20.png": "/app-quiz-fishes/static/media/quiz_20.fff2f8784ad0f1293640.png",
+    "static/media/quiz_19.png": "/app-quiz-fishes/static/media/quiz_19.a276397b78f033f88182.png",
     "static/media/quiz_10.png": "/app-quiz-fishes/static/media/quiz_10.b7ea1b0a7b771b2a60dc.png",
     "static/media/quiz_09.png": "/app-quiz-fishes/static/media/quiz_09.e9bc625589613ddb2197.png",
     "static/media/quiz_01.png": "/app-quiz-fishes/static/media/quiz_01.04b8f4dd1c885b135229.png",
+    "static/media/quiz_13.png": "/app-quiz-fishes/static/media/quiz_13.bc9b5fb2fa8e5ef8a3ac.png",
+    "static/media/quiz_11.png": "/app-quiz-fishes/static/media/quiz_11.8cb8dc71d40cb0b9d7d8.png",
+    "static/media/quiz_16.png": "/app-quiz-fishes/static/media/quiz_16.efa57818901e7f8bd5c9.png",
     "static/media/quiz_08.png": "/app-quiz-fishes/static/media/quiz_08.d67e323c9bf4bebd0191.png",
+    "static/media/quiz_12.png": "/app-quiz-fishes/static/media/quiz_12.76abb3e9089122088d7d.png",
     "static/media/quiz_06.png": "/app-quiz-fishes/static/media/quiz_06.ab1c0bc70e540cbcb85f.png",
     "index.html": "/app-quiz-fishes/index.html",
     "main.279e97dd.css.map": "/app-quiz-fishes/static/css/main.279e97dd.css.map",
-    "main.99278bca.js.map": "/app-quiz-fishes/static/js/main.99278bca.js.map",
+    "main.b1a02f02.js.map": "/app-quiz-fishes/static/js/main.b1a02f02.js.map",
     "488.23c12632.chunk.js.map": "/app-quiz-fishes/static/js/488.23c12632.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.279e97dd.css",
-    "static/js/main.99278bca.js"
+    "static/js/main.b1a02f02.js"
   ]
 }
