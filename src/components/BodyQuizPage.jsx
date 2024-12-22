@@ -40,25 +40,29 @@ function BodyQuizPage() {
         const currentData = data[currentQuestion];
         let currentScore = 0;
 
-        if (orderInput.trim().toLowerCase() === currentData.order.toLowerCase()) {
+        function removeAccents(str) {
+            return str.normalize("NFD").replace(/[\u0300-\u036f]/g, "");
+        }
+
+        if (removeAccents(orderInput.trim().toLowerCase()) === removeAccents(currentData.order.toLowerCase())) {
             currentScore = currentScore + 0.5
         } else {
             setOrderInputState(orderInput.toLowerCase())
             setOrderAnswer(currentData.order.toLowerCase())
         }
-        if (familyInput.trim().toLowerCase() === currentData.family.toLowerCase()) {
+        if (removeAccents(familyInput.trim().toLowerCase()) === removeAccents(currentData.family.toLowerCase())) {
             currentScore = currentScore + 0.5
         } else {
             setFamilyInputState(familyInput.toLowerCase())
             setFamilyAnswer(currentData.family.toLowerCase())
         }
-        if (scientificInput.trim().toLowerCase() === currentData.scientific_name.toLowerCase()) {
+        if (removeAccents(scientificInput.trim().toLowerCase()) === removeAccents(currentData.scientific_name.toLowerCase())) {
             currentScore = currentScore + 0.5
         } else {
             setScientificInputState(scientificInput.toLowerCase())
             setScientificAnswer(currentData.scientific_name.toLowerCase())
         }
-        if (nameInput.trim().toLowerCase() === currentData.common_name.toLowerCase()) {
+        if (removeAccents(nameInput.trim().toLowerCase()) === removeAccents(currentData.common_name.toLowerCase())) {
             currentScore = currentScore + 0.5
         } else {
             setNameInputState(nameInput.toLowerCase())

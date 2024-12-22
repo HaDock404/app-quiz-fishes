@@ -43,26 +43,29 @@ function BodyRandomQuizPage() {
         const currentData = shuffledData[currentQuestion];
         let currentScore = 0;
 
+        function removeAccents(str) {
+            return str.normalize("NFD").replace(/[\u0300-\u036f]/g, "");
+        }
 
-        if (orderInput.trim().toLowerCase() === currentData.order.toLowerCase()) {
+        if (removeAccents(orderInput.trim().toLowerCase()) === removeAccents(currentData.order.toLowerCase())) {
             currentScore = currentScore + 0.5
         } else {
             setOrderInputState(orderInput.toLowerCase())
             setOrderAnswer(currentData.order.toLowerCase())
         }
-        if (familyInput.trim().toLowerCase() === currentData.family.toLowerCase()) {
+        if (removeAccents(familyInput.trim().toLowerCase()) === removeAccents(currentData.family.toLowerCase())) {
             currentScore = currentScore + 0.5
         } else {
             setFamilyInputState(familyInput.toLowerCase())
             setFamilyAnswer(currentData.family.toLowerCase())
         }
-        if (scientificInput.trim().toLowerCase() === currentData.scientific_name.toLowerCase()) {
+        if (removeAccents(scientificInput.trim().toLowerCase()) === removeAccents(currentData.scientific_name.toLowerCase())) {
             currentScore = currentScore + 0.5
         } else {
             setScientificInputState(scientificInput.toLowerCase())
             setScientificAnswer(currentData.scientific_name.toLowerCase())
         }
-        if (nameInput.trim().toLowerCase() === currentData.common_name.toLowerCase()) {
+        if (removeAccents(nameInput.trim().toLowerCase()) === removeAccents(currentData.common_name.toLowerCase())) {
             currentScore = currentScore + 0.5
         } else {
             setNameInputState(nameInput.toLowerCase())
@@ -109,8 +112,6 @@ function BodyRandomQuizPage() {
         }
     };
 
-    //const currentData = data[currentQuestion];
-    //const imagePath = require(`../assets/${currentData.image}`);
     const currentData = shuffledData[currentQuestion] || {};
     const imagePath = currentData.image
     ? require(`../assets/${currentData.image}`)
@@ -119,7 +120,7 @@ function BodyRandomQuizPage() {
     return (
         <section className="quiz_page_section">
             <article className="quiz_page_box">
-                <h1 className="quiz_page_h1">Reconocimiento Peces lvl 1</h1>
+                <h1 className="quiz_page_h1">Reconocimiento Peces</h1>
                 <p className="quiz_page_current_question">Question <span className="quiz_page_current_question_span">{currentQuestion + 1}</span> on {shuffledData.length}</p>
                 <article className="quiz_page_box_question-image">
                     <div className="quiz_page_box-question">
