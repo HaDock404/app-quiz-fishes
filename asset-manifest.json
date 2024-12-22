@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/app-quiz-fishes/static/css/main.6b7a4e08.css",
-    "main.js": "/app-quiz-fishes/static/js/main.ae09b1b0.js",
+    "main.js": "/app-quiz-fishes/static/js/main.991995c5.js",
     "static/js/896.65590542.chunk.js": "/app-quiz-fishes/static/js/896.65590542.chunk.js",
     "static/js/835.b1359f92.chunk.js": "/app-quiz-fishes/static/js/835.b1359f92.chunk.js",
     "static/js/994.143aaca7.chunk.js": "/app-quiz-fishes/static/js/994.143aaca7.chunk.js",
@@ -40,11 +40,11 @@
     "static/media/quiz_06.png": "/app-quiz-fishes/static/media/quiz_06.ab1c0bc70e540cbcb85f.png",
     "index.html": "/app-quiz-fishes/index.html",
     "main.6b7a4e08.css.map": "/app-quiz-fishes/static/css/main.6b7a4e08.css.map",
-    "main.ae09b1b0.js.map": "/app-quiz-fishes/static/js/main.ae09b1b0.js.map",
+    "main.991995c5.js.map": "/app-quiz-fishes/static/js/main.991995c5.js.map",
     "488.23c12632.chunk.js.map": "/app-quiz-fishes/static/js/488.23c12632.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.6b7a4e08.css",
-    "static/js/main.ae09b1b0.js"
+    "static/js/main.991995c5.js"
   ]
 }
