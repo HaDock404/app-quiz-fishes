@@ -111,7 +111,7 @@ function BodyQuizPage() {
     return (
         <section className="quiz_page_section">
             <article className="quiz_page_box">
-                <h1 className="quiz_page_h1">Reconocimiento Peces lvl 1</h1>
+                <h1 className="quiz_page_h1">Reconocimiento Peces</h1>
                 <p className="quiz_page_current_question">Question <span className="quiz_page_current_question_span">{currentQuestion + 1}</span> on {data.length}</p>
                 <article className="quiz_page_box_question-image">
                     <div className="quiz_page_box-question">

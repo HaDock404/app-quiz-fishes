@@ -43,7 +43,7 @@ function BodyHomePage() {
             />
             <QuizCard 
                 to="/quiz"
-                data="quiz_02.json"
+                data="quiz_02bis.json"
                 title="Reconocimiento Peces lvl 2"
                 text="Practice finding the names of the fish from all the previous levels"
                 difficulty="hard"
