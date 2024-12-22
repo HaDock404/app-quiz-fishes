@@ -44,25 +44,25 @@ function BodyRandomQuizPage() {
         let currentScore = 0;
 
 
-        if (orderInput.toLowerCase() === currentData.order.toLowerCase()) {
+        if (orderInput.trim().toLowerCase() === currentData.order.toLowerCase()) {
             currentScore = currentScore + 0.5
         } else {
             setOrderInputState(orderInput.toLowerCase())
             setOrderAnswer(currentData.order.toLowerCase())
         }
-        if (familyInput.toLowerCase() === currentData.family.toLowerCase()) {
+        if (familyInput.trim().toLowerCase() === currentData.family.toLowerCase()) {
             currentScore = currentScore + 0.5
         } else {
             setFamilyInputState(familyInput.toLowerCase())
             setFamilyAnswer(currentData.family.toLowerCase())
         }
-        if (scientificInput.toLowerCase() === currentData.scientific_name.toLowerCase()) {
+        if (scientificInput.trim().toLowerCase() === currentData.scientific_name.toLowerCase()) {
             currentScore = currentScore + 0.5
         } else {
             setScientificInputState(scientificInput.toLowerCase())
             setScientificAnswer(currentData.scientific_name.toLowerCase())
         }
-        if (nameInput.toLowerCase() === currentData.common_name.toLowerCase()) {
+        if (nameInput.trim().toLowerCase() === currentData.common_name.toLowerCase()) {
             currentScore = currentScore + 0.5
         } else {
             setNameInputState(nameInput.toLowerCase())
