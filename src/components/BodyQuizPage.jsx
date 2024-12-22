@@ -1,11 +1,23 @@
-import React, { useState } from "react";
-import data from "../data/quiz_01.json";
-import { useNavigate } from "react-router-dom";
-//setOrderInputState(`<span id='test'>${orderInput.toLowerCase()}</span> : ${currentData.order.toLowerCase()}`)
+import React, { useState, useEffect } from "react";
+
+import { useNavigate, useLocation } from "react-router-dom";
 
 function BodyQuizPage() {
     const [currentQuestion, setCurrentQuestion] = useState(0);
+    const location = useLocation();
     const navigate = useNavigate();
+    const quizFile = location.state?.quizData;
+    const [data, setData] = useState([]);
+
+    useEffect(() => {
+        import(`../data/${quizFile}`)
+            .then((module) => setData([...module.default]))
+            .catch((error) => {
+                console.error("Erreur lors du chargement des données :", error);
+                alert("Impossible de charger le quiz.");
+                navigate("/");
+            });
+    }, [quizFile, navigate]);
 
     const [orderInput, setOrderInput] = useState("");
     const [familyInput, setFamilyInput] = useState("");
@@ -94,7 +106,7 @@ function BodyQuizPage() {
     };
 
     const currentData = data[currentQuestion];
-    const imagePath = require(`../assets/${currentData.image}`);
+    
 
     return (
         <section className="quiz_page_section">
@@ -168,11 +180,15 @@ function BodyQuizPage() {
 
                     </div>
                     <div className="quiz_page_box-image">
-                        <img
-                            src={imagePath}
-                            alt={currentData.name}
-                            style={{ width: "400px", height: "300px" }}
-                        />
+                        {currentData?.image ? (
+                                <img
+                                    src={require(`../assets/${currentData.image}`)}
+                                    alt={currentData.name || "Image"}
+                                    style={{ width: "400px", height: "300px" }}
+                                />
+                            ) : (
+                                <p>Image non disponible</p>
+                            )}
                     </div>
                 </article>
                 <article className="quiz_page_result">

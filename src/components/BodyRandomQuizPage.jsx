@@ -1,21 +1,26 @@
 import React, { useState, useEffect } from "react";
-import data from "../data/quiz_01.json";
-import { useNavigate } from "react-router-dom";
+import { useNavigate, useLocation } from "react-router-dom";
 
 function BodyRandomQuizPage() {
-
+    const location = useLocation();
+    const navigate = useNavigate();
     const [shuffledData, setShuffledData] = useState([]);
-    const shuffleArray = (array) => {
-        return array.sort(() => Math.random() - 0.5);
-      };
-    
-      // Charger les données mélangées au démarrage
-      useEffect(() => {
-        setShuffledData(shuffleArray([...data])); // Copie de `data` pour éviter de modifier l'original
-      }, []);
+
+    const quizFile = location.state?.quizData;
+
+    useEffect(() => {
+        import(`../data/${quizFile}`)
+            .then((module) => setShuffledData(shuffleArray([...module.default])))
+            .catch((error) => {
+                console.error("Erreur lors du chargement des données :", error);
+                alert("Impossible de charger le quiz.");
+                navigate("/");
+            });
+    }, [quizFile, navigate]);
+
+    const shuffleArray = (array) => array.sort(() => Math.random() - 0.5);
 
     const [currentQuestion, setCurrentQuestion] = useState(0);
-    const navigate = useNavigate();
 
     const [orderInput, setOrderInput] = useState("");
     const [familyInput, setFamilyInput] = useState("");
@@ -115,7 +120,7 @@ function BodyRandomQuizPage() {
         <section className="quiz_page_section">
             <article className="quiz_page_box">
                 <h1 className="quiz_page_h1">Reconocimiento Peces lvl 1</h1>
-                <p className="quiz_page_current_question">Question <span className="quiz_page_current_question_span">{currentQuestion + 1}</span> on {data.length}</p>
+                <p className="quiz_page_current_question">Question <span className="quiz_page_current_question_span">{currentQuestion + 1}</span> on {shuffledData.length}</p>
                 <article className="quiz_page_box_question-image">
                     <div className="quiz_page_box-question">
                         <div>

@@ -1,8 +1,8 @@
 import { Link } from "react-router-dom"
 
-function QuizCard({title, text, difficulty, color, order}) {
+function QuizCard({title, text, difficulty, color, order, to, data}) {
     return (
-        <Link to="/random-quiz" className="quiz_card_article">
+        <Link to={to} className="quiz_card_article" state={{ quizData: data }}>
             <div className="quiz_card_title">
                 {title}
             </div>
