@@ -1,5 +1,8 @@
 import React, { useState, useEffect } from "react";
 import { useNavigate, useLocation } from "react-router-dom";
+import { Link } from "react-router-dom";
+
+import HouseIcon from "./HouseIcon";
 
 function BodyRandomQuizPage() {
     const location = useLocation();
@@ -207,10 +210,12 @@ function BodyRandomQuizPage() {
                     <button className="quiz_page_result_button" onClick={handleNextQuestion} style={{backgroundColor: "#8DB5E6"}}>
                         Next Question
                     </button>
-                    
                 </article>
-                
             </article>
+            <Link to='/' className="quiz_page_button_home">
+                <HouseIcon />
+                Home
+            </Link>
         </section>
     )
 }

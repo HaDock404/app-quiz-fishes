@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from "react";
-
 import { useNavigate, useLocation } from "react-router-dom";
+import { Link } from "react-router-dom";
+
+import HouseIcon from "./HouseIcon";
 
 function BodyQuizPage() {
     const [currentQuestion, setCurrentQuestion] = useState(0);
@@ -102,7 +104,7 @@ function BodyQuizPage() {
         if (currentQuestion < data.length - 1) {
             setCurrentQuestion(currentQuestion + 1);
         } else {
-            alert(`Quiz terminé ! Votre score final est de ${score} / 20.`);
+            alert(`Quiz done ! Your final score is ${score} / 20.`);
             setCurrentQuestion(0);
             setScore(0);
             navigate('/')
@@ -202,10 +204,12 @@ function BodyQuizPage() {
                     <button className="quiz_page_result_button" onClick={handleNextQuestion} style={{backgroundColor: "#8DB5E6"}}>
                         Next Question
                     </button>
-                    
                 </article>
-                
             </article>
+            <Link to='/' className="quiz_page_button_home">
+                <HouseIcon />
+                Home
+            </Link>
         </section>
     )
 }
