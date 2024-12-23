@@ -4,7 +4,9 @@ import QuizCard from './QuizCard'
 function BodyHomePage() {
     return (
         <section className="body_homepage_section">
-            <article className='body_homepage_article_header'>Quiz Management</article>
+            <article className='body_homepage_article_header'>
+                <span className='body_homepage_article_header_title'>Quiz Management</span>
+            </article>
             <QuizCard
                 to="/quiz"
                 data="quiz_01.json"
