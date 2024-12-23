@@ -120,7 +120,7 @@ function BodyQuizPage() {
         if (currentQuestion < data.length - 1) {
             setCurrentQuestion(currentQuestion + 1);
         } else {
-            alert(`Quiz done ! Your final score is ${score} / 20.`);
+            alert(`Quiz done ! Your final score is ${((score)/(data.length))*20} / 20.`);
             setCurrentQuestion(0);
             setScore(0);
             navigate('/')
