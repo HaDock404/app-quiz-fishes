@@ -84,12 +84,12 @@ function BodyRandomQuizPage() {
             setNameAnswer(currentData.common_name.toLowerCase())
         }
     
-        if (alreadyClicked == 0) {
+        if (alreadyClicked === 0) {
             setScore(score + currentScore);
             setAlreadyClicked(1)
         }
     
-        if (alreadyClicked == 0) {
+        if (alreadyClicked === 0) {
             if (currentScore === 2) {
                 setFeedback("Good Job ! 2/2 points !");
             } else if (currentScore === 1.5) {
