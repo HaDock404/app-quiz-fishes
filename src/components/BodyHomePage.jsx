@@ -44,7 +44,7 @@ function BodyHomePage() {
                 order="disorderly"
             />
             <QuizCard 
-                to="/quiz"
+                to="/random-quiz"
                 data="quiz_02bis.json"
                 title="Reconocimiento Peces lvl 2"
                 text="Practice finding the names of the fish from all the previous levels"
@@ -71,7 +71,7 @@ function BodyHomePage() {
                 order="disorderly"
             />
             <QuizCard 
-                to="/quiz"
+                to="/random-quiz"
                 data="quiz_03bis.json"
                 title="Reconocimiento Peces lvl 3"
                 text="Practice finding the names of the fish from all the previous levels."
@@ -98,7 +98,7 @@ function BodyHomePage() {
                 order="disorderly"
             />
             <QuizCard 
-                to="/quiz"
+                to="/random-quiz"
                 data="quiz_04bis.json"
                 title="Reconocimiento Peces lvl 4"
                 text="Practice finding the names of the fish from all the previous levels"
@@ -125,7 +125,7 @@ function BodyHomePage() {
                 order="disorderly"
             />
             <QuizCard 
-                to="/quiz"
+                to="/random-quiz"
                 data="quiz_05bis.json"
                 title="Reconocimiento Peces lvl 5"
                 text="Practice finding the names of the fish from all the previous levels"
@@ -152,7 +152,7 @@ function BodyHomePage() {
                 order="disorderly"
             />
             <QuizCard   
-                to="/quiz"
+                to="/random-quiz"
                 data="quiz_06bis.json"
                 title="Reconocimiento Peces lvl 6"
                 text="Practice finding the names of the fish from all the previous levels"
