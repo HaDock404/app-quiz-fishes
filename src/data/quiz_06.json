@@ -1,90 +1,90 @@
 [
     {
-      "image": ".jpg",
+      "image": "quiz_51.png",
       "order": "NEOGASTROPODA",
       "family": "Muricidae",
       "scientific_name": "Bolinus brandaris",
       "common_name": "Cañaílla"
     },
     {
-        "image": ".jpg",
+        "image": "quiz_52.png",
         "order": "LITTORINIMORPHA",
         "family": "Littorinidae",
         "scientific_name": "Littorina littorea",
         "common_name": "Bígaro"
       },
       {
-        "image": ".jpg",
+        "image": "quiz_53.png",
         "order": "PEDUNCULATA",
         "family": "Pollicipedidae",
         "scientific_name": "Pollicipes pollicipes",
         "common_name": "Percebe"
       },
       {
-        "image": ".jpg",
+        "image": "quiz_54.png",
         "order": "DECAPODA",
         "family": "Cancridae",
         "scientific_name": "Cancer pagurus",
         "common_name": "Buey de mar"
       },
       {
-        "image": ".jpg",
+        "image": "quiz_55.png",
         "order": "DECAPODA",
         "family": "Majidae",
         "scientific_name": "Maja squinado",
         "common_name": "Centollo"
       },
       {
-        "image": ".jpg",
+        "image": "quiz_56.png",
         "order": "DECAPODA",
         "family": "Polybiidae",
         "scientific_name": "Necora puber",
         "common_name": "Nécora"
       },
       {
-        "image": ".jpg",
+        "image": "quiz_57.png",
         "order": "DECAPODA",
         "family": "Portunidae",
         "scientific_name": "Carcinus maenas",
         "common_name": "Cangrejo atlántico"
       },
       {
-        "image": ".jpg",
+        "image": "quiz_58.png",
         "order": "DECAPODA",
         "family": "Nephropidae",
         "scientific_name": "Homarus gammarus",
         "common_name": "Bogavante europeo"
       },
       {
-        "image": ".jpg",
+        "image": "quiz_59.png",
         "order": "DECAPODA",
         "family": "Nephropidae",
         "scientific_name": "Nephrops norvegicus",
         "common_name": "Cigala"
       },
       {
-        "image": ".jpg",
+        "image": "quiz_60.png",
         "order": "DECAPODA",
         "family": "Palinuridae",
         "scientific_name": "Palinurus elephas",
         "common_name": "Langosta"
       },
       {
-        "image": ".jpg",
+        "image": "quiz_61.png",
         "order": "DECAPODA",
         "family": "Aristeidae",
         "scientific_name": "Aristaeopsis Edwardsianus",
         "common_name": "Carabinero"
       },
       {
-        "image": ".jpg",
+        "image": "quiz_62.png",
         "order": "DECAPODA",
         "family": "Penaeidae",
         "scientific_name": "Parapenaeus longirostris",
         "common_name": "Gamba blanca"
       },
       {
-        "image": ".jpg",
+        "image": "quiz_63.png",
         "order": "DECAPODA",
         "family": "Penaeidae",
         "scientific_name": "Melicertus kerathurus",
