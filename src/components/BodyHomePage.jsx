@@ -50,7 +50,7 @@ function BodyHomePage() {
                 text="Practice finding the names of the fish from all the previous levels"
                 difficulty="hard"
                 color=""
-                order="ordered"
+                order="disorderly"
             />
             <QuizCard
                 to="/quiz"
@@ -77,7 +77,7 @@ function BodyHomePage() {
                 text="Practice finding the names of the fish from all the previous levels."
                 difficulty="hard"
                 color=""
-                order="ordered"
+                order="disorderly"
             />
             <QuizCard 
                 to="/quiz"
@@ -104,7 +104,7 @@ function BodyHomePage() {
                 text="Practice finding the names of the fish from all the previous levels"
                 difficulty="hard"
                 color=""
-                order="ordered"
+                order="disorderly"
             />
             <QuizCard 
                 to="/quiz"
@@ -131,7 +131,7 @@ function BodyHomePage() {
                 text="Practice finding the names of the fish from all the previous levels"
                 difficulty="hard"
                 color=""
-                order="ordered"
+                order="disorderly"
             />
             <QuizCard 
                 to="/quiz"
@@ -158,7 +158,16 @@ function BodyHomePage() {
                 text="Practice finding the names of the fish from all the previous levels"
                 difficulty="hard" 
                 color=""
-                order="ordered"
+                order="disorderly"
+            />
+            <QuizCard   
+                to="/random-quiz"
+                data="quiz_06bis.json"
+                title="Reconocimiento Peces lvl 7"
+                text="Practice finding the names of 10 fishes from all the previous levels"
+                difficulty="hard" 
+                color=""
+                order="disorderly"
             />
         </section>
     )

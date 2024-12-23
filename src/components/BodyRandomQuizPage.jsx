@@ -124,7 +124,7 @@ function BodyRandomQuizPage() {
         if (currentQuestion < shuffledData.length - 1) {
             setCurrentQuestion(currentQuestion + 1);
         } else {
-            alert(`Quiz terminé ! Votre score final est de ${((score)/(shuffledData.length))*20} / 20.`);
+            alert(`Quiz terminé ! Votre score final est de ${((score/2)/(shuffledData.length))*20} / 20.`);
             setCurrentQuestion(0);
             setScore(0);
             navigate('/')
