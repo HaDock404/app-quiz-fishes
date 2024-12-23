@@ -11,6 +11,7 @@ import ScrollToTop from "./styles/ScrollToTop";
 import HomePage from './pages/HomePage';
 import Quiz from './pages/Quiz.jsx';
 import RandomQuiz from './pages/RandomQuiz.jsx';
+import TenRandomQuiz from './pages/TenRandomQuiz.jsx';
 
 import reportWebVitals from './reportWebVitals';
 
@@ -23,6 +24,7 @@ root.render(
           <Route path="/" element={<HomePage />}/>
           <Route path="/quiz" element={<Quiz />}/>
           <Route path="/random-quiz" element={<RandomQuiz />}/>
+          <Route path="/ten-random-quiz" element={<TenRandomQuiz />}/>
         </Routes>
     <React.StrictMode></React.StrictMode>
   </HashRouter>,

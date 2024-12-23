@@ -161,7 +161,7 @@ function BodyHomePage() {
                 order="disorderly"
             />
             <QuizCard   
-                to="/random-quiz"
+                to="/ten-random-quiz"
                 data="quiz_06bis.json"
                 title="Reconocimiento Peces lvl 7"
                 text="Practice finding the names of 10 fishes from all the previous levels"
