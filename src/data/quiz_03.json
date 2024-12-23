@@ -1,69 +1,69 @@
 [
     {
-      "image": ".jpg",
+      "image": "quiz_21.png",
       "order": "PERCIFORMES",
       "family": "Scombridae",
       "scientific_name": "Scomber sombrus",
       "common_name": "Caballa"
     },
     {
-        "image": ".jpg",
+        "image": "quiz_22.png",
         "order": "PERCIFORMES",
         "family": "Scombridae",
         "scientific_name": "Scomber colias",
         "common_name": "Caballa del sur"
       },
       {
-        "image": ".jpg",
+        "image": "quiz_23.png",
         "order": "PERCIFORMES",
         "family": "Scombridae",
         "scientific_name": "Thunnus thynnus",
         "common_name": "Atún rojo o de aleta azul"
       },
       {
-        "image": ".jpg",
+        "image": "quiz_24.png",
         "order": "PERCIFORMES",
         "family": "Scombridae",
         "scientific_name": "Thunnus alalunga",
         "common_name": "Atún blanco"
       },
       {
-        "image": ".jpg",
+        "image": "quiz_25.png",
         "order": "PERCIFORMES",
         "family": "Scombridae",
         "scientific_name": "Sarda sarda",
         "common_name": "Bonito"
       },
       {
-        "image": ".jpg",
+        "image": "quiz_26.png",
         "order": "PERCIFORMES",
         "family": "Xiphiidae",
         "scientific_name": "Xiphias gladius",
         "common_name": "Pez espada"
       },
       {
-        "image": ".jpg",
+        "image": "quiz_27.png",
         "order": "PERCIFORMES",
         "family": "Luvaridae",
         "scientific_name": "Luvarus imperialis",
         "common_name": "Luvaro"
       },
       {
-        "image": ".jpg",
+        "image": "quiz_28.png",
         "order": "PERCIFORMES",
         "family": "Gobiidae",
         "scientific_name": "Aphia minuta",
         "common_name": "chanquete"
       },
       {
-        "image": ".jpg",
+        "image": "quiz_29.png",
         "order": "ESCORPENIFORMES",
         "family": "Sebastidae",
         "scientific_name": "Helicolenus dactylopterus",
         "common_name": "Gallineta"
       },
       {
-        "image": ".jpg",
+        "image": "quiz_30.png",
         "order": "ESCORPENIFORMES",
         "family": "Scorpaenidae",
         "scientific_name": "Scorpaena scrofa",

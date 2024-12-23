@@ -70,7 +70,7 @@ function BodyHomePage() {
             />
             <QuizCard 
                 to="/quiz"
-                data="quiz_03.json"
+                data="quiz_03bis.json"
                 title="Reconocimiento Peces lvl 3"
                 text="Practice finding the names of the fish from all the previous levels."
                 difficulty="hard"
@@ -97,7 +97,7 @@ function BodyHomePage() {
             />
             <QuizCard 
                 to="/quiz"
-                data="quiz_04.json"
+                data="quiz_04bis.json"
                 title="Reconocimiento Peces lvl 4"
                 text="Practice finding the names of the fish from all the previous levels"
                 difficulty="hard"
@@ -124,7 +124,7 @@ function BodyHomePage() {
             />
             <QuizCard 
                 to="/quiz"
-                data="quiz_05.json"
+                data="quiz_05bis.json"
                 title="Reconocimiento Peces lvl 5"
                 text="Practice finding the names of the fish from all the previous levels"
                 difficulty="hard"
@@ -151,7 +151,7 @@ function BodyHomePage() {
             />
             <QuizCard   
                 to="/quiz"
-                data="quiz_06.json"
+                data="quiz_06bis.json"
                 title="Reconocimiento Peces lvl 6"
                 text="Practice finding the names of the fish from all the previous levels"
                 difficulty="hard" 
