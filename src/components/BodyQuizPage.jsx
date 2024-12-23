@@ -36,6 +36,7 @@ function BodyQuizPage() {
     const [nameAnswer, setNameAnswer] = useState("");
 
     const [score, setScore] = useState(0);
+    const [alreadyClicked, setAlreadyClicked] =  useState(0);
     const [feedback, setFeedback] = useState("");
 
     const handleSubmit = () => {
@@ -48,41 +49,55 @@ function BodyQuizPage() {
 
         if (removeAccents(orderInput.trim().toLowerCase()) === removeAccents(currentData.order.toLowerCase())) {
             currentScore = currentScore + 0.5
+            setOrderInputState("")
+            setOrderAnswer("")
         } else {
             setOrderInputState(orderInput.toLowerCase())
             setOrderAnswer(currentData.order.toLowerCase())
         }
         if (removeAccents(familyInput.trim().toLowerCase()) === removeAccents(currentData.family.toLowerCase())) {
             currentScore = currentScore + 0.5
+            setFamilyInputState("")
+            setFamilyAnswer("")
         } else {
             setFamilyInputState(familyInput.toLowerCase())
             setFamilyAnswer(currentData.family.toLowerCase())
         }
         if (removeAccents(scientificInput.trim().toLowerCase()) === removeAccents(currentData.scientific_name.toLowerCase())) {
             currentScore = currentScore + 0.5
+            setScientificInputState("")
+            setScientificAnswer("")
         } else {
             setScientificInputState(scientificInput.toLowerCase())
             setScientificAnswer(currentData.scientific_name.toLowerCase())
         }
         if (removeAccents(nameInput.trim().toLowerCase()) === removeAccents(currentData.common_name.toLowerCase())) {
             currentScore = currentScore + 0.5
+            setNameInputState("")
+            setNameAnswer("")
         } else {
             setNameInputState(nameInput.toLowerCase())
             setNameAnswer(currentData.common_name.toLowerCase())
         }
+
+        if (alreadyClicked == 0) {
+            setScore(score + currentScore);
+            setAlreadyClicked(1)
+        }
     
-        setScore(score + currentScore);
-    
-        if (currentScore === 2) {
-          setFeedback("Good Job ! 2/2 points !");
-        } else if (currentScore === 1.5) {
-            setFeedback("Almost ! 1.5/2 point.");
-        } else if (currentScore === 1) {
-            setFeedback("Meh ! 1/2 point.");
-        } else if (currentScore === 0.5) {
-            setFeedback("Outch ! 0.5/2 point.");
-        } else {
-            setFeedback("What are u doing ?! 0/2 point.");
+        if (alreadyClicked == 0) {
+            if (currentScore === 2) {
+                setFeedback("Good Job ! 2/2 points !");
+            } else if (currentScore === 1.5) {
+                setFeedback("Almost ! 1.5/2 point.");
+            } else if (currentScore === 1) {
+                setFeedback("Meh ! 1/2 point.");
+            } else if (currentScore === 0.5) {
+                setFeedback("Outch ! 0.5/2 point.");
+            } else {
+                setFeedback("What are u doing ?! 0/2 point.");
+            }
+            setAlreadyClicked(1)
         }
     };
     
@@ -100,6 +115,7 @@ function BodyQuizPage() {
         setScientificAnswer("")
         setNameInputState("")
         setNameAnswer("")
+        setAlreadyClicked(0)
 
         if (currentQuestion < data.length - 1) {
             setCurrentQuestion(currentQuestion + 1);
